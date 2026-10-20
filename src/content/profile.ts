@@ -121,7 +121,7 @@ const profile: PortfolioProfile = {
       type: "GenAI / RAG",
       description:
         "Constructed an offline pipeline to extract audio from lecture videos, generating Hindi transcriptions via Whisper with timestamped metadata. Produced BGE-M3 embeddings through Ollama and engineered cosine similarity search to power grounded Llama 3.2 responses with video titles and exact timestamp references.",
-      tech: ["Python", "Whisper", "Ollama", "BGE-M3", "Llama 3.2", "scikit-learn", "Pandas", "FFmpeg"],
+      tech: ["Python", "Whisper", "Ollama", "BGE-M3", "Llama 3.2", "scikit-learn"],
       link: "https://github.com/Sahil-1727/Rag-Based-AI-Teaching-Assistant",
     },
     {
