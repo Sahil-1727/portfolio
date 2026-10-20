@@ -14,7 +14,7 @@ function AboutCard() {
         p: { xs: 3, md: 4 },
         borderRadius: 4,
         border: "1px solid",
-        height: "75vh",
+        height: { md: "75vh" },
         overflow: "auto",
         borderColor: "divider",
         backgroundColor: "#fafafa",
@@ -23,22 +23,23 @@ function AboutCard() {
       <Stack spacing={3}>
         {/* Header */}
         <Stack
-          direction={"row"}
-          sx={{ justifyContent: "space-around", alignItems: "center" }}
+          direction={{ xs: "column", sm: "row" }}
+          sx={{ justifyContent: "space-around", alignItems: "center", gap: 2 }}
         >
           <Avatar
             sx={{
-              width: 150,
-              height: 150,
-              fontSize: 44,
+              width: { xs: 100, md: 150 },
+              height: { xs: 100, md: 150 },
+              fontSize: { xs: 32, md: 44 },
               fontWeight: 800,
               bgcolor: "primary.main",
+              flexShrink: 0,
             }}
           >
             {profile.initials}
           </Avatar>
 
-          <Box sx={{ width: "65%" }}>
+          <Box sx={{ width: { xs: "100%", sm: "65%" } }}>
             <Typography variant="h4" sx={{ fontWeight: 600 }}>
               {profile.name}
             </Typography>

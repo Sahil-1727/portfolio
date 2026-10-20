@@ -18,25 +18,37 @@ function Header({ activePanel, setActivePanel }: NavigationProps) {
       }}
     >
       <Container maxWidth="lg">
-        <Toolbar disableGutters sx={{ justifyContent: "center" }}>
+        <Toolbar
+          disableGutters
+          sx={{
+            justifyContent: "center",
+            overflowX: "auto",
+            "&::-webkit-scrollbar": { display: "none" },
+            scrollbarWidth: "none",
+          }}
+        >
           <Box
             sx={{
               position: "relative",
               display: "flex",
-              gap: `${gap}px`,
+              gap: { xs: "8px", md: `${gap}px` },
               alignSelf: "stretch",
               alignItems: "center",
+              minWidth: "max-content",
             }}
           >
             <Box
               sx={{
                 position: "absolute",
                 left: 0,
-                width: `${buttonWidth}px`,
-                height: "44px",
+                width: { xs: "72px", md: `${buttonWidth}px` },
+                height: "36px",
                 borderRadius: 2,
                 backgroundColor: "primary.main",
-                transform: `translateX(${activeIndex * (buttonWidth + gap)}px)`,
+                transform: {
+                  xs: `translateX(${activeIndex * (72 + 8)}px)`,
+                  md: `translateX(${activeIndex * (buttonWidth + gap)}px)`,
+                },
                 transition: "transform 300ms ease",
                 zIndex: 0,
               }}
@@ -47,14 +59,14 @@ function Header({ activePanel, setActivePanel }: NavigationProps) {
                   key={item.value}
                   onClick={() => setActivePanel(item.value)}
                   sx={{
-                    width: `${buttonWidth}px`,
-                    height: "44px",
-                    px: 2,
+                    width: { xs: "72px", md: `${buttonWidth}px` },
+                    height: { xs: "36px", md: "44px" },
+                    px: { xs: 1, md: 2 },
                     zIndex: 1,
                     color:
                       activePanel === item.value ? "white" : "text.primary",
                     textTransform: "none",
-                    fontSize: "16px",
+                    fontSize: { xs: "12px", md: "16px" },
                     fontWeight: 600,
                     fontFamily: "Arial, sans-serif",
                     fontStyle: "normal",
