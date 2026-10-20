@@ -123,7 +123,7 @@ function ContactCard() {
           <input
             type="hidden"
             name="access_key"
-            value="<YOUR_WEB3FORMS_ACCESS_KEY>"
+            value="3bf68035-6f45-467a-a370-9b3a63fb96c4"
           />
 
           <input
