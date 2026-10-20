@@ -1,0 +1,24 @@
+import { Box, Typography } from "@mui/material";
+import profile from "../content/profile";
+import uiText from "../content/uiText";
+
+function Footer() {
+  return (
+    <Box
+      component="footer"
+      sx={{
+        mt: 0, // margin-top
+        py: 3, // padding-top, padding-bottom
+        borderTop: "1px solid #e5e7eb",
+        backgroundColor: "#fafafa",
+        justifyContent: "center",
+      }}
+    >
+      <Typography variant="body2" color="text.secondary" sx={{textAlign: 'center'}}>
+        © {new Date().getFullYear()} {profile.name}. {uiText.footer.rightsReserved}
+      </Typography>
+    </Box>
+  );
+}
+
+export default Footer;
