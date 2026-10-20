@@ -11,6 +11,7 @@ const uiText = {
     { label: "About", value: "about" },
     { label: "Skills", value: "skills" },
     { label: "Projects", value: "projects" },
+    { label: "Certifications", value: "certifications" },
     { label: "Contact", value: "contact" },
   ] satisfies NavigationItem[],
   hero: {
@@ -26,6 +27,7 @@ const uiText = {
   about: {
     experienceHeading: "Technical Experience",
     educationHeading: "Education",
+    certificationsHeading: "Licenses & Certifications",
   },
   skills: {
     heading: "Technical Skills",

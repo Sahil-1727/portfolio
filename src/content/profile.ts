@@ -47,6 +47,38 @@ const profile: PortfolioProfile = {
         detail: "Percentage: 82.25%",
       },
     ],
+    certifications: [
+      {
+        title: "AI Agents Fundamentals",
+        issuer: "Hugging Face",
+        issued: "Oct 2026",
+        credentialUrl: "https://huggingface.co/datasets/agents-course/certificates/resolve/main/certificates/sahil1727/2026-10-17.png",
+      },
+      {
+        title: "Machine Learning",
+        issuer: "Kaggle",
+        issued: "Oct 2026",
+        pdfFile: "Sahil teltumde - Intro to Machine Learning.png",
+      },
+      {
+        title: "Data Science",
+        issuer: "Code with Harry",
+        issued: "Mar 2026",
+        pdfFile: "The_Ultimate_Job_Ready_Data_Science_Course_Certificate (1).pdf",
+      },
+      {
+        title: "Pandas For Data Analysis",
+        issuer: "Kaggle",
+        issued: "Oct 2026",
+        pdfFile: "Sahil teltumde - Pandas.png",
+      },
+      {
+        title: "Tata - GenAI Powered Data Analytics Job Simulation",
+        issuer: "Forage",
+        issued: "Oct 2026",
+        credentialUrl: "https://www.theforage.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_6ad0595d370ca66eb2fce89c_1792044227907_completion_certificate.pdf",
+      },
+    ],
   },
   skillGroups: [
     {

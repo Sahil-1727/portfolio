@@ -16,6 +16,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import AboutCard from "./AboutCard";
 import SkillsCard from "./SkillsCard";
 import ProjectsCard from "./ProjectsCard";
+import CertificationsCard from "./CertificationsCard";
 import ContactCard from "./ContactCard";
 import CardFlipTransition from "./CardFlipTransition";
 import ParticleFlowGroup from "./ParticleFlowGroup";
@@ -27,6 +28,7 @@ const panelComponents = {
   about: AboutCard,
   skills: SkillsCard,
   projects: ProjectsCard,
+  certifications: CertificationsCard,
   contact: ContactCard,
 } satisfies Record<CardPanelId, ComponentType>;
 
@@ -47,6 +49,8 @@ function HeroSection({ activePanel, setActivePanel }: NavigationProps) {
     } else if (activePanel === "skills") {
       setActivePanel("projects");
     } else if (activePanel === "projects") {
+      setActivePanel("certifications");
+    } else if (activePanel === "certifications") {
       setActivePanel("contact");
     } else {
       setActivePanel("about");

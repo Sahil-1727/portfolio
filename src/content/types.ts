@@ -34,6 +34,14 @@ export interface Education {
   detail?: string;
 }
 
+export interface Certification {
+  title: string;
+  issuer: string;
+  issued: string;
+  credentialUrl?: string;
+  pdfFile?: string;
+}
+
 export interface AboutContent {
   location: string;
   role: string;
@@ -41,6 +49,7 @@ export interface AboutContent {
   graduation: string;
   experience: Experience[];
   education: Education[];
+  certifications: Certification[];
 }
 
 export interface SkillGroup {
