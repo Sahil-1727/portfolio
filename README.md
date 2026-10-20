@@ -4,7 +4,7 @@ A personal portfolio built with React, TypeScript, Vite, and Material UI, showca
 
 ## Live Demo
 
-<!-- Add your GitHub Pages URL here after deploying -->
+https://sahil-1727.github.io/portfolio/
 
 ## Tech Stack
 
