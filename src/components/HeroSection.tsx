@@ -2,6 +2,7 @@ import { useState, type ComponentType } from "react";
 import {
   Box,
   Button,
+  Chip,
   Container,
   IconButton,
   Stack,
@@ -92,6 +93,37 @@ function HeroSection({ activePanel, setActivePanel }: NavigationProps) {
               transition: "all 500ms ease",
             }}
           >
+            <Stack direction="row" spacing={1.5} sx={{ alignItems: "center", mb: 1 }}>
+              <Chip
+                label="Open to Internship"
+                size="small"
+                sx={{
+                  backgroundColor: "#e8f5e9",
+                  color: "#2e7d32",
+                  fontWeight: 700,
+                  border: "1px solid #a5d6a7",
+                  "& .MuiChip-label": { px: 1.5 },
+                }}
+                icon={
+                  <Box
+                    sx={{
+                      width: 8,
+                      height: 8,
+                      borderRadius: "50%",
+                      backgroundColor: "#2e7d32",
+                      ml: 1,
+                      flexShrink: 0,
+                      animation: "pulse 2s infinite",
+                      "@keyframes pulse": {
+                        "0%, 100%": { opacity: 1 },
+                        "50%": { opacity: 0.4 },
+                      },
+                    }}
+                  />
+                }
+              />
+            </Stack>
+
             <Typography
               variant="overline"
               sx={{

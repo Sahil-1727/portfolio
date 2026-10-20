@@ -27,6 +27,7 @@ const uiText = {
   about: {
     experienceHeading: "Technical Experience",
     educationHeading: "Education",
+    achievementsHeading: "Achievements",
     certificationsHeading: "Licenses & Certifications",
   },
   skills: {

@@ -3,6 +3,7 @@ import { Avatar, Box, Divider, Stack, Typography } from "@mui/material";
 import SchoolIcon from "@mui/icons-material/School";
 import WorkIcon from "@mui/icons-material/Work";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
 import LiquidGlassCard from "./LiquidGlassCard";
 import profile from "../content/profile";
 import uiText from "../content/uiText";
@@ -175,6 +176,38 @@ function AboutCard() {
             ))}
           </Stack>
         </Box>
+        {/* Achievements */}
+        {profile.about.achievements.length > 0 && (
+          <Box>
+            <Stack direction="row" spacing={1.5} sx={{ mb: 1.5, alignItems: "center" }}>
+              <EmojiEventsIcon sx={{ color: "primary.main" }} />
+              <Typography variant="h5" sx={{ fontWeight: 600 }}>
+                {uiText.about.achievementsHeading}
+              </Typography>
+            </Stack>
+            <Stack spacing={1.5}>
+              {profile.about.achievements.map((achievement) => (
+                <Box
+                  key={achievement}
+                  sx={{
+                    p: 2,
+                    borderRadius: 3,
+                    backgroundColor: "white",
+                    border: "1px solid",
+                    borderColor: "divider",
+                  }}
+                >
+                  <Typography variant="body1" sx={{ lineHeight: 1.6 }}>
+                    {achievement}
+                  </Typography>
+                </Box>
+              ))}
+            </Stack>
+          </Box>
+        )}
+
+        <Divider />
+
       </Stack>
     </LiquidGlassCard>
   );

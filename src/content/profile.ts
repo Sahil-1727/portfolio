@@ -47,6 +47,9 @@ const profile: PortfolioProfile = {
         detail: "Percentage: 82.25%",
       },
     ],
+    achievements: [
+      "🏆 Won 1st Place at Code Battle 1.0 (March 2026) — built a Flask backend for a placement tracker under competition conditions.",
+    ],
     certifications: [
       {
         title: "AI Agents Fundamentals",

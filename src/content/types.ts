@@ -50,6 +50,7 @@ export interface AboutContent {
   experience: Experience[];
   education: Education[];
   certifications: Certification[];
+  achievements: string[];
 }
 
 export interface SkillGroup {
