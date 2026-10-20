@@ -107,21 +107,21 @@ const profile: PortfolioProfile = {
   ],
   projects: [
     {
+      id: "housePricePredictor",
+      title: "Bangalore House Price Predictor",
+      type: "Machine Learning",
+      description:
+        "Built an end-to-end ML pipeline using Random Forest Regressor with median imputation, standard scaling, and one-hot encoding via sklearn's ColumnTransformer. Evaluated with 10-fold cross-validation and deployed as a Flask REST API with a /predict endpoint serving real-time predictions from JSON input.",
+      tech: ["Python", "scikit-learn", "Flask", "REST API", "joblib"],
+      link: "https://github.com/Sahil-1727/bangalore-house-price-predictor",
+    },
+    {
       id: "ragAssistant",
       title: "Local RAG AI Assistant for Educational Video Content",
       type: "GenAI / RAG",
       description:
         "Constructed an offline pipeline to extract audio from lecture videos, generating Hindi transcriptions via Whisper with timestamped metadata. Produced BGE-M3 embeddings through Ollama and engineered cosine similarity search to power grounded Llama 3.2 responses with video titles and exact timestamp references.",
-      tech: [
-        "Python",
-        "Whisper",
-        "Ollama",
-        "BGE-M3",
-        "Llama 3.2",
-        "scikit-learn",
-        "Pandas",
-        "FFmpeg",
-      ],
+      tech: ["Python", "Whisper", "Ollama", "BGE-M3", "Llama 3.2", "scikit-learn", "Pandas", "FFmpeg"],
       link: "https://github.com/Sahil-1727/Rag-Based-AI-Teaching-Assistant",
     },
     {

@@ -9,7 +9,8 @@ export type SkillGroupId =
 export type ProjectId =
   | "ragAssistant"
   | "devtrack"
-  | "queueSystem";
+  | "queueSystem"
+  | "housePricePredictor";
 
 export type SocialLinkId = "linkedin" | "github";
 

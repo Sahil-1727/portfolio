@@ -13,16 +13,18 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LaunchIcon from "@mui/icons-material/Launch";
 import PsychologyIcon from "@mui/icons-material/Psychology";
 import StorageIcon from "@mui/icons-material/Storage";
-import QueueIcon from "@mui/icons-material/Queue";
+import HomeIcon from "@mui/icons-material/Home";
+import BarChartIcon from "@mui/icons-material/BarChart";
 import LiquidGlassCard from "./LiquidGlassCard";
 import profile from "../content/profile";
 import uiText from "../content/uiText";
 import type { ProjectId } from "../content/types";
 
 const projectIcons = {
+  housePricePredictor: <BarChartIcon />,
   ragAssistant: <PsychologyIcon />,
   devtrack: <StorageIcon />,
-  queueSystem: <QueueIcon />,
+  queueSystem: <HomeIcon />,
 } satisfies Record<ProjectId, ReactNode>;
 
 function ProjectsCard() {
