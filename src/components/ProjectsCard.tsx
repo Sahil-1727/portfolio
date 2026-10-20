@@ -98,7 +98,7 @@ function ProjectsCard() {
                   {project.description}
                 </Typography>
 
-                <Stack direction="row" spacing={1} useFlexGap>
+                <Stack direction="row" spacing={1} useFlexGap sx={{ flexWrap: "wrap" }}>
                   {project.tech.map((item) => (
                     <Chip
                       key={item}
