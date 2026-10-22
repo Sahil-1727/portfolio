@@ -56,11 +56,20 @@ const profile: PortfolioProfile = {
         issuer: "Hugging Face",
         issued: "Oct 2026",
         credentialUrl: "https://huggingface.co/datasets/agents-course/certificates/resolve/main/certificates/sahil1727/2026-10-17.png",
+        pdfFile: "huggingfaceAiagents.png",
+      },
+      {
+        title: "Intro to SQL",
+        issuer: "Kaggle",
+        issued: "Oct 2026",
+        credentialUrl: "https://www.kaggle.com/learn/certification/sahilteltumde/intro-to-sql",
+        pdfFile: "Sahil teltumde - Intro to SQL.png",
       },
       {
         title: "Machine Learning",
         issuer: "Kaggle",
         issued: "Oct 2026",
+        credentialUrl: "https://www.kaggle.com/learn/certification/sahilteltumde/intro-to-machine-learning",
         pdfFile: "Sahil teltumde - Intro to Machine Learning.png",
       },
       {
@@ -73,6 +82,7 @@ const profile: PortfolioProfile = {
         title: "Pandas For Data Analysis",
         issuer: "Kaggle",
         issued: "Oct 2026",
+        credentialUrl: "https://www.kaggle.com/learn/certification/sahilteltumde/pandas",
         pdfFile: "Sahil teltumde - Pandas.png",
       },
       {
@@ -80,6 +90,7 @@ const profile: PortfolioProfile = {
         issuer: "Forage",
         issued: "Oct 2026",
         credentialUrl: "https://www.theforage.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_6ad0595d370ca66eb2fce89c_1792044227907_completion_certificate.pdf",
+        pdfFile: "Forage-dataAnalytics.pdf",
       },
     ],
   },
