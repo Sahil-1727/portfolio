@@ -7,7 +7,7 @@ const profile: PortfolioProfile = {
   hero: {
     greeting: "Hi, I'm Sahil Teltumde.",
     headline:
-      "MCA student building Python applications and a local RAG teaching assistant.",
+      "",
     summary:
       "Data Science and GenAI-focused MCA student with hands-on experience building Python applications and a local RAG teaching assistant using Whisper, Ollama, BGE-M3, and semantic retrieval. Skilled in Python, SQL, pandas, scikit-learn and Flask; seeking a Data Science, Machine Learning, or GenAI internship.",
   },

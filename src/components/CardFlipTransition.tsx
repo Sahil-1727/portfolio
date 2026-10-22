@@ -31,7 +31,7 @@ const HALF_FLIP_DURATION = 220;
 const SLIDE_DURATION = 480;
 const SLIDE_ENTER_EASING = "cubic-bezier(0.25, 0.46, 0.45, 0.94)";
 const SLIDE_EXIT_EASING = "cubic-bezier(0.55, 0.06, 0.68, 0.19)";
-const PANEL_ORDER: readonly CardPanelId[] = ["about", "skills", "projects", "contact"];
+const PANEL_ORDER: readonly CardPanelId[] = ["about", "skills", "projects", "certifications", "contact"];
 
 function getFlipDirection(
   currentPanel: CardPanelId,

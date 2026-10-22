@@ -12,10 +12,11 @@ function AboutCard() {
   return (
     <LiquidGlassCard
       sx={{
-        p: { xs: 3, md: 4 },
+        p: { xs: 2, sm: 3, md: 4 },
         borderRadius: 4,
         border: "1px solid",
         height: { md: "75vh" },
+        maxHeight: { xs: "calc(100vh - 120px)", sm: "calc(100vh - 140px)", md: "none" },
         overflow: "auto",
         borderColor: "divider",
         backgroundColor: "#fafafa",
@@ -25,13 +26,13 @@ function AboutCard() {
         {/* Header */}
         <Stack
           direction={{ xs: "column", sm: "row" }}
-          sx={{ justifyContent: "space-around", alignItems: "center", gap: 2 }}
+          sx={{ justifyContent: "space-around", alignItems: "center", gap: 1.5 }}
         >
           <Avatar
             sx={{
-              width: { xs: 100, md: 150 },
-              height: { xs: 100, md: 150 },
-              fontSize: { xs: 32, md: 44 },
+              width: { xs: 80, sm: 110, md: 150 },
+              height: { xs: 80, sm: 110, md: 150 },
+              fontSize: { xs: 28, sm: 36, md: 44 },
               fontWeight: 800,
               bgcolor: "primary.main",
               flexShrink: 0,
@@ -41,7 +42,7 @@ function AboutCard() {
           </Avatar>
 
           <Box sx={{ width: { xs: "100%", sm: "65%" } }}>
-            <Typography variant="h4" sx={{ fontWeight: 600 }}>
+            <Typography variant="h4" sx={{ fontWeight: 600, fontSize: { xs: "1.4rem", md: "2.125rem" } }}>
               {profile.name}
             </Typography>
 
@@ -76,7 +77,7 @@ function AboutCard() {
             sx={{ mb: 1.5, alignItems: "center" }}
           >
             <WorkIcon sx={{ color: "primary.main" }} />
-            <Typography variant="h5" sx={{ fontWeight: 600 }}>
+            <Typography variant="h5" sx={{ fontWeight: 600, fontSize: { xs: "1.1rem", md: "1.5rem" } }}>
               {uiText.about.experienceHeading}
             </Typography>
           </Stack>
@@ -136,7 +137,7 @@ function AboutCard() {
             sx={{ mb: 1.5, alignItems: "center" }}
           >
             <SchoolIcon sx={{ color: "primary.main" }} />
-            <Typography variant="h5" sx={{ fontWeight: 600 }}>
+            <Typography variant="h5" sx={{ fontWeight: 600, fontSize: { xs: "1.1rem", md: "1.5rem" } }}>
               {uiText.about.educationHeading}
             </Typography>
           </Stack>
@@ -181,7 +182,7 @@ function AboutCard() {
           <Box>
             <Stack direction="row" spacing={1.5} sx={{ mb: 1.5, alignItems: "center" }}>
               <EmojiEventsIcon sx={{ color: "primary.main" }} />
-              <Typography variant="h5" sx={{ fontWeight: 600 }}>
+              <Typography variant="h5" sx={{ fontWeight: 600, fontSize: { xs: "1.1rem", md: "1.5rem" } }}>
                 {uiText.about.achievementsHeading}
               </Typography>
             </Stack>
@@ -205,9 +206,6 @@ function AboutCard() {
             </Stack>
           </Box>
         )}
-
-        <Divider />
-
       </Stack>
     </LiquidGlassCard>
   );

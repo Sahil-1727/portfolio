@@ -24,7 +24,7 @@ function App() {
         sx={{
           flexGrow: 1,
           display: "flex",
-          alignItems: "center",
+          alignItems: { xs: "flex-start", md: "center" },
           justifyContent: "center",
         }}
       >
