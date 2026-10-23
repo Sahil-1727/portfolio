@@ -10,7 +10,8 @@ export type ProjectId =
   | "ragAssistant"
   | "devtrack"
   | "queueSystem"
-  | "housePricePredictor";
+  | "housePricePredictor"
+  | "bizIntelEngine";
 
 export type SocialLinkId = "linkedin" | "github";
 
@@ -67,6 +68,7 @@ export interface Project {
   tech: string[];
   link: string;
   liveLink?: string;
+  status?: string;
 }
 
 export interface ContactContent {

@@ -15,12 +15,14 @@ import PsychologyIcon from "@mui/icons-material/Psychology";
 import StorageIcon from "@mui/icons-material/Storage";
 import HomeIcon from "@mui/icons-material/Home";
 import BarChartIcon from "@mui/icons-material/BarChart";
+import InsightsIcon from "@mui/icons-material/Insights";
 import LiquidGlassCard from "./LiquidGlassCard";
 import profile from "../content/profile";
 import uiText from "../content/uiText";
 import type { ProjectId } from "../content/types";
 
 const projectIcons = {
+  bizIntelEngine: <InsightsIcon />,
   housePricePredictor: <BarChartIcon />,
   ragAssistant: <PsychologyIcon />,
   devtrack: <StorageIcon />,
@@ -83,11 +85,25 @@ function ProjectsCard() {
                     {projectIcons[project.id]}
                   </Box>
 
-                  <Box>
-                    <Typography variant="h6">
-                      {project.title}
-                    </Typography>
-
+                  <Box sx={{ flex: 1 }}>
+                    <Stack direction="row" spacing={1} alignItems="center">
+                      <Typography variant="h6">
+                        {project.title}
+                      </Typography>
+                      {project.status && (
+                        <Chip
+                          label={project.status}
+                          size="small"
+                          sx={{
+                            fontWeight: 600,
+                            borderRadius: 2,
+                            backgroundColor: "#fff8e1",
+                            color: "#f57c00",
+                            border: "1px solid #f57c00",
+                          }}
+                        />
+                      )}
+                    </Stack>
                     <Typography variant="body2" color="primary.main">
                       {project.type}
                     </Typography>

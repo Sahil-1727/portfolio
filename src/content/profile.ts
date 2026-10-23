@@ -159,6 +159,16 @@ const profile: PortfolioProfile = {
   ],
   projects: [
     {
+      id: "bizIntelEngine",
+      title: "Business Decision Intelligence Engine",
+      type: "Data Science / Machine Learning",
+      status: "In Development",
+      description:
+        "An end-to-end business intelligence and ML system built on real-world e-commerce data to uncover customer, product, revenue, delivery, seller, and customer-voice insights. Structured around three questions: What is happening? → Why is it happening? → What should the business do next? Planned modules include Customer Segmentation, Customer Value & Retention, Product & Revenue Intelligence, Delivery & Seller Intelligence, Customer Voice Analysis, and ML-based Recommendations.",
+      tech: ["Python", "Pandas", "NumPy", "SQL", "PostgreSQL", "scikit-learn", "Matplotlib", "Seaborn", "Flask", "HTML/CSS", "Bootstrap"],
+      link: "https://github.com/Sahil-1727/Business-Decision-Intelligence",
+    },
+    {
       id: "housePricePredictor",
       title: "Bangalore House Price Predictor",
       type: "Machine Learning",
