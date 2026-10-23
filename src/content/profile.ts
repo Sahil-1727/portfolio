@@ -16,6 +16,7 @@ const profile: PortfolioProfile = {
     linkedin: "https://www.linkedin.com/in/sahil-teltumde",
     github: "https://github.com/Sahil-1727",
     takeuforward: "https://takeuforward.org/profile/sahilteltumde",
+    leetcode: "https://leetcode.com/u/Sahil_2777/",
   },
   about: {
     location: "Nagpur, Maharashtra, India",

@@ -212,6 +212,15 @@ function HeroSection({ activePanel, setActivePanel }: NavigationProps) {
                 >
                   <Box component="img" src={`${import.meta.env.BASE_URL}tuf.png`} alt="TakeUForward" sx={{ width: 28, height: 28, borderRadius: "50%" }} />
                 </IconButton>
+                <IconButton
+                  href={profile.socialLinks.leetcode}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LeetCode"
+                  sx={{ p: 0.5 }}
+                >
+                  <Box component="img" src="https://leetcode.com/favicon.ico" alt="LeetCode" sx={{ width: 28, height: 28, borderRadius: "4px" }} />
+                </IconButton>
               </Stack>
             </Stack>
           </Box>
@@ -354,6 +363,15 @@ function HeroSection({ activePanel, setActivePanel }: NavigationProps) {
                 sx={{ p: 0.5 }}
               >
                 <Box component="img" src={`${import.meta.env.BASE_URL}tuf.png`} alt="TakeUForward" sx={{ width: 36, height: 36, borderRadius: "50%" }} />
+              </IconButton>
+              <IconButton
+                href={profile.socialLinks.leetcode}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LeetCode"
+                sx={{ p: 0.5 }}
+              >
+                <Box component="img" src="https://leetcode.com/favicon.ico" alt="LeetCode" sx={{ width: 36, height: 36, borderRadius: "4px" }} />
               </IconButton>
             </Stack>
           </ParticleFlowGroup>

@@ -13,7 +13,7 @@ export type ProjectId =
   | "housePricePredictor"
   | "bizIntelEngine";
 
-export type SocialLinkId = "linkedin" | "github" | "takeuforward";
+export type SocialLinkId = "linkedin" | "github" | "takeuforward" | "leetcode";
 
 export interface HeroContent {
   greeting: string;
