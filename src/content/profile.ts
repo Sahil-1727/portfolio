@@ -15,6 +15,7 @@ const profile: PortfolioProfile = {
   socialLinks: {
     linkedin: "https://www.linkedin.com/in/sahil-teltumde",
     github: "https://github.com/Sahil-1727",
+    takeuforward: "https://takeuforward.org/profile/sahilteltumde",
   },
   about: {
     location: "Nagpur, Maharashtra, India",

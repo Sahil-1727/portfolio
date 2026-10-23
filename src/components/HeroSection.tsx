@@ -203,6 +203,15 @@ function HeroSection({ activePanel, setActivePanel }: NavigationProps) {
                 >
                   <GitHubIcon />
                 </IconButton>
+                <IconButton
+                  href={profile.socialLinks.takeuforward}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="TakeUForward"
+                  sx={{ p: 0.5 }}
+                >
+                  <Box component="img" src={`${import.meta.env.BASE_URL}tuf.png`} alt="TakeUForward" sx={{ width: 28, height: 28, borderRadius: "50%" }} />
+                </IconButton>
               </Stack>
             </Stack>
           </Box>
@@ -336,6 +345,15 @@ function HeroSection({ activePanel, setActivePanel }: NavigationProps) {
                 sx={{ color: "#181717" }}
               >
                 <GitHubIcon fontSize="large" />
+              </IconButton>
+              <IconButton
+                href={profile.socialLinks.takeuforward}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="TakeUForward"
+                sx={{ p: 0.5 }}
+              >
+                <Box component="img" src={`${import.meta.env.BASE_URL}tuf.png`} alt="TakeUForward" sx={{ width: 36, height: 36, borderRadius: "50%" }} />
               </IconButton>
             </Stack>
           </ParticleFlowGroup>
