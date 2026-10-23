@@ -86,7 +86,7 @@ function ProjectsCard() {
                   </Box>
 
                   <Box sx={{ flex: 1 }}>
-                    <Stack direction="row" spacing={1} alignItems="center">
+                    <Stack direction="row" spacing={1} sx={{ alignItems: "center" }}>
                       <Typography variant="h6">
                         {project.title}
                       </Typography>
