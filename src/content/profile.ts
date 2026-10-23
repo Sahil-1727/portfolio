@@ -52,6 +52,12 @@ const profile: PortfolioProfile = {
     ],
     certifications: [
       {
+        title: "AI Fundamentals: Foundations for Understanding AI",
+        issuer: "IBM",
+        issued: "2025",
+        credentialUrl: "https://www.credly.com/badges/762fc103-4065-438e-bf62-df17ed13fd4d",
+      },
+      {
         title: "AI Agents Fundamentals",
         issuer: "Hugging Face",
         issued: "Oct 2026",
