@@ -190,36 +190,36 @@ function HeroSection({ activePanel, setActivePanel }: NavigationProps) {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={uiText.social.linkedin}
-                  sx={{ color: "#0A66C2" }}
+                  sx={{ color: "#0A66C2", p: 1 }}
                 >
-                  <LinkedInIcon />
+                  <LinkedInIcon sx={{ fontSize: 24 }} />
                 </IconButton>
                 <IconButton
                   href={profile.socialLinks.github}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={uiText.social.github}
-                  sx={{ color: "#181717" }}
+                  sx={{ color: "#181717", p: 1 }}
                 >
-                  <GitHubIcon />
+                  <GitHubIcon sx={{ fontSize: 24 }} />
                 </IconButton>
                 <IconButton
                   href={profile.socialLinks.takeuforward}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="TakeUForward"
-                  sx={{ p: 0.5 }}
+                  sx={{ p: 1 }}
                 >
-                  <Box component="img" src={`${import.meta.env.BASE_URL}tuf.png`} alt="TakeUForward" sx={{ width: 28, height: 28, borderRadius: "50%" }} />
+                  <Box component="img" src={`${import.meta.env.BASE_URL}tuf.png`} alt="TakeUForward" sx={{ width: 24, height: 24, borderRadius: "50%" }} />
                 </IconButton>
                 <IconButton
                   href={profile.socialLinks.leetcode}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LeetCode"
-                  sx={{ p: 0.5 }}
+                  sx={{ p: 1 }}
                 >
-                  <Box component="img" src="https://leetcode.com/favicon.ico" alt="LeetCode" sx={{ width: 28, height: 28, borderRadius: "4px" }} />
+                  <Box component="img" src="https://leetcode.com/favicon.ico" alt="LeetCode" sx={{ width: 24, height: 24, borderRadius: "4px" }} />
                 </IconButton>
               </Stack>
             </Stack>
