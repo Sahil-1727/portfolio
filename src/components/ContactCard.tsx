@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 
 import EmailIcon from "@mui/icons-material/Email";
+import LaunchIcon from "@mui/icons-material/Launch";
 import LiquidGlassCard from "./LiquidGlassCard";
 import profile from "../content/profile";
 import uiText from "../content/uiText";
@@ -73,26 +74,35 @@ function ContactCard() {
               key={item.label}
               href={item.href}
               startIcon={item.icon}
+              endIcon={<LaunchIcon fontSize="small" sx={{ color: "primary.main", opacity: 0.7 }} />}
               sx={{
                 justifyContent: "flex-start",
                 textTransform: "none",
                 p: 2,
                 borderRadius: 3,
-                backgroundColor: "white",
+                backgroundColor: "#f0f7ff",
                 border: "1px solid",
-                borderColor: "divider",
+                borderColor: "primary.light",
+                borderLeft: "4px solid",
+                borderLeftColor: "primary.main",
                 color: "text.primary",
+                cursor: "pointer",
                 transition: "all 250ms ease",
+                "& .MuiButton-startIcon": { color: "primary.main" },
                 "&:hover": {
                   transform: "translateY(-3px)",
-                  boxShadow: 3,
-                  backgroundColor: "white",
+                  boxShadow: "0 6px 20px rgba(25,118,210,0.15)",
+                  backgroundColor: "#e3f0ff",
+                  borderColor: "primary.main",
+                  borderLeftColor: "primary.main",
                 },
               }}
             >
-              <Box sx={{ textAlign: "left" }}>
-                <Typography>{item.label}</Typography>
-                <Typography variant="body2" color="text.secondary">
+              <Box sx={{ textAlign: "left", flex: 1 }}>
+                <Typography sx={{ fontWeight: 600, color: "primary.main", fontSize: "0.85rem", lineHeight: 1.2 }}>
+                  {item.label}
+                </Typography>
+                <Typography variant="body2" color="text.secondary" sx={{ mt: 0.25 }}>
                   {item.value}
                 </Typography>
               </Box>
