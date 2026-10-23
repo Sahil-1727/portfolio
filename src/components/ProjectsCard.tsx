@@ -85,9 +85,9 @@ function ProjectsCard() {
                     {projectIcons[project.id]}
                   </Box>
 
-                  <Box sx={{ flex: 1 }}>
-                    <Stack direction="row" spacing={1} sx={{ alignItems: "center" }}>
-                      <Typography variant="h6">
+                  <Box sx={{ flex: 1, minWidth: 0 }}>
+                    <Stack direction="row" spacing={1} sx={{ alignItems: "flex-start", flexWrap: "wrap", gap: 0.5 }}>
+                      <Typography variant="h6" sx={{ fontSize: { xs: "1rem", sm: "1.25rem" }, lineHeight: 1.3 }}>
                         {project.title}
                       </Typography>
                       {project.status && (
@@ -100,6 +100,7 @@ function ProjectsCard() {
                             backgroundColor: "#fff8e1",
                             color: "#f57c00",
                             border: "1px solid #f57c00",
+                            flexShrink: 0,
                           }}
                         />
                       )}
@@ -110,7 +111,7 @@ function ProjectsCard() {
                   </Box>
                 </Stack>
 
-                <Typography color="text.secondary" sx={{ lineHeight: 1.5 }}>
+                <Typography variant="body2" color="text.secondary" sx={{ lineHeight: 1.6 }}>
                   {project.description}
                 </Typography>
 

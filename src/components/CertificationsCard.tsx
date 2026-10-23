@@ -49,9 +49,10 @@ function CertificationsCard() {
                 display: "flex",
                 flexDirection: "column",
                 gap: 0.75,
+                minHeight: { md: 130 },
               }}
             >
-              <Typography variant="subtitle1" sx={{ fontWeight: 600, lineHeight: 1.3 }}>
+              <Typography variant="subtitle1" sx={{ fontWeight: 600, lineHeight: 1.3, fontSize: { xs: "0.9rem", sm: "1rem" } }}>
                 {cert.title}
               </Typography>
 

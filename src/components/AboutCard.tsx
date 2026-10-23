@@ -93,7 +93,7 @@ function AboutCard() {
                 borderColor: "divider",
               }}
             >
-              <Typography variant="h6">{experience.title}</Typography>
+              <Typography variant="h6" sx={{ fontSize: { xs: "0.95rem", sm: "1.1rem", md: "1.25rem" }, lineHeight: 1.4 }}>{experience.title}</Typography>
               <Typography variant="body2" color="text.secondary">
                 {experience.period}
               </Typography>
@@ -154,7 +154,7 @@ function AboutCard() {
                   borderColor: "divider",
                 }}
               >
-                <Typography variant="h6">{education.degree}</Typography>
+                <Typography variant="h6" sx={{ fontSize: { xs: "0.95rem", sm: "1.1rem", md: "1.25rem" }, lineHeight: 1.4 }}>{education.degree}</Typography>
 
                 <Typography variant="body2" color="text.secondary">
                   {education.period}

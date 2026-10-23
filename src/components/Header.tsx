@@ -22,7 +22,7 @@ function Header({ activePanel, setActivePanel }: NavigationProps) {
           disableGutters
           sx={{ display: { xs: "flex", md: "none" }, justifyContent: "stretch", minHeight: { xs: "48px !important", sm: "56px !important" } }}
         >
-          <Box sx={{ display: "flex", width: "100%", gap: { xs: "4px", sm: "6px" } }}>
+          <Box sx={{ display: "flex", width: "100%", gap: { xs: "3px", sm: "6px" } }}>
             {uiText.navigation.map((item) => (
               <Button
                 key={item.value}
@@ -34,8 +34,11 @@ function Header({ activePanel, setActivePanel }: NavigationProps) {
                   px: 0,
                   borderRadius: 2,
                   textTransform: "none",
-                  fontSize: { xs: "11px", sm: "13px" },
+                  fontSize: { xs: "10px", sm: "13px" },
                   fontWeight: 600,
+                  letterSpacing: 0,
+                  whiteSpace: "nowrap",
+                  overflow: "hidden",
                   color: activePanel === item.value ? "white" : "text.secondary",
                   backgroundColor: activePanel === item.value ? "primary.main" : "transparent",
                   transition: "all 200ms ease",

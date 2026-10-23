@@ -161,7 +161,7 @@ function ContactCard() {
               required
             />
 
-            <Stack direction="row" spacing={2} sx={{ alignItems: "center" }}>
+            <Stack direction="row" spacing={2} sx={{ alignItems: "center", flexWrap: "wrap", gap: 1 }}>
               <Button
                 type="submit"
                 variant="contained"
