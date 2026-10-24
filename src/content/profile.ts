@@ -67,6 +67,13 @@ const profile: PortfolioProfile = {
         pdfFile: "huggingfaceAiagents.png",
       },
       {
+        title: "Python",
+        issuer: "Kaggle",
+        issued: "Oct 2026",
+        credentialUrl: "https://www.kaggle.com/learn/certification/sahilteltumde/python",
+        pdfFile: "Sahil teltumde - Python.png",
+      },
+      {
         title: "Intro to SQL",
         issuer: "Kaggle",
         issued: "Oct 2026",
