@@ -15,7 +15,7 @@ const uiText = {
     { label: "Contact", value: "contact" },
   ] satisfies NavigationItem[],
   hero: {
-    eyebrow: "Data Science Portfolio",
+    eyebrow: " ",
     start: "Start",
     next: "Next",
     downloadResume: "Download Resume",
