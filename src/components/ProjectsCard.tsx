@@ -14,6 +14,7 @@ import LaunchIcon from "@mui/icons-material/Launch";
 import PsychologyIcon from "@mui/icons-material/Psychology";
 import StorageIcon from "@mui/icons-material/Storage";
 import HomeIcon from "@mui/icons-material/Home";
+import RouterIcon from "@mui/icons-material/Router";
 import BarChartIcon from "@mui/icons-material/BarChart";
 import InsightsIcon from "@mui/icons-material/Insights";
 import LiquidGlassCard from "./LiquidGlassCard";
@@ -27,6 +28,7 @@ const projectIcons = {
   ragAssistant: <PsychologyIcon />,
   devtrack: <StorageIcon />,
   queueSystem: <HomeIcon />,
+  smartHome: <RouterIcon />,
 } satisfies Record<ProjectId, ReactNode>;
 
 function ProjectsCard() {

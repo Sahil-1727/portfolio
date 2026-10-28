@@ -196,16 +196,6 @@ const profile: PortfolioProfile = {
       link: "https://github.com/Sahil-1727/Rag-Based-AI-Teaching-Assistant",
     },
     {
-      id: "devtrack",
-      title: "DevTrack: Internship Application Tracker",
-      type: "Full Stack",
-      description:
-        "Developed and deployed a full-stack internship tracker to Render in 15 days using 4 Flask blueprints and SQLAlchemy ORM. Engineered a secure REST API with Bearer token authentication and implemented dynamic search, filtering, pagination, and Chart.js visualizations across 100+ records.",
-      tech: ["Flask", "PostgreSQL", "SQLAlchemy", "REST API", "Chart.js"],
-      link: "https://github.com/Sahil-1727/devtrack",
-      liveLink: "https://devtrack-fjw4.onrender.com/",
-    },
-    {
       id: "queueSystem",
       title: "Digital Queue Management System",
       type: "SaaS Platform",
@@ -214,6 +204,26 @@ const profile: PortfolioProfile = {
       tech: ["Python", "Flask", "SQL", "OpenRouteService API", "Brevo API"],
       link: "https://github.com/Sahil-1727/digital-queue-management-system",
       liveLink: "https://digital-queue-management-system-1.onrender.com",
+    },
+    {
+      id: "smartHome",
+      title: "Smart Home IoT System",
+      type: "IoT / Embedded Systems",
+      description:
+        "Built a 3-layer IoT system where a Flask backend controls 4 room lights on an ESP8266 over HTTP GET endpoints, with a web dashboard and voice commands. Logged every device action and event to MySQL, and handled hardware quirks such as active-LOW pins and transistor-driven LED circuits. Debugged integration issues across firmware, backend, and network (threading, CPU load, race conditions) and documented the architecture and data flow.",
+      tech: ["ESP8266", "C++", "Python", "Flask", "MySQL", "REST API"],
+      link: "https://github.com/Sahil-1727/smart-home-nodemcu",
+      liveLink: "https://drive.google.com/drive/folders/1sxf_2_LJ4erH08dEwIo-839QQIJ9MK70",
+    },
+    {
+      id: "devtrack",
+      title: "DevTrack: Internship Application Tracker",
+      type: "Full Stack",
+      description:
+        "Developed and deployed a full-stack internship tracker to Render in 15 days using 4 Flask blueprints and SQLAlchemy ORM. Engineered a secure REST API with Bearer token authentication and implemented dynamic search, filtering, pagination, and Chart.js visualizations across 100+ records.",
+      tech: ["Flask", "PostgreSQL", "SQLAlchemy", "REST API", "Chart.js"],
+      link: "https://github.com/Sahil-1727/devtrack",
+      liveLink: "https://devtrack-fjw4.onrender.com/",
     },
   ],
   contact: {

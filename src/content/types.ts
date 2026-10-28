@@ -11,7 +11,8 @@ export type ProjectId =
   | "devtrack"
   | "queueSystem"
   | "housePricePredictor"
-  | "bizIntelEngine";
+  | "bizIntelEngine"
+  | "smartHome";
 
 export type SocialLinkId = "linkedin" | "github" | "takeuforward" | "leetcode";
 
