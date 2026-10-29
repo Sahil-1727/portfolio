@@ -6,6 +6,7 @@ import PsychologyIcon from "@mui/icons-material/Psychology";
 import TerminalIcon from "@mui/icons-material/Terminal";
 import BuildIcon from "@mui/icons-material/Build";
 import SchoolIcon from "@mui/icons-material/School";
+import WifiIcon from "@mui/icons-material/Wifi";
 import DnsIcon from "@mui/icons-material/Dns";
 import LiquidGlassCard from "./LiquidGlassCard";
 import profile from "../content/profile";
@@ -19,6 +20,7 @@ const skillIcons = {
   databases: <StorageIcon />,
   tools: <BuildIcon />,
   concepts: <SchoolIcon />,
+  iot: <WifiIcon />,
 } satisfies Record<SkillGroupId, ReactNode>;
 
 function SkillsCard() {

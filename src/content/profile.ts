@@ -142,6 +142,7 @@ const profile: PortfolioProfile = {
       skills: [
         "PostgreSQL (Neon)",
         "MySQL",
+        "ChromaDB",
         "REST APIs",
         "Brevo API",
         "OpenRouteService API",
@@ -158,12 +159,18 @@ const profile: PortfolioProfile = {
         "Google Colab",
         "Git/GitHub",
         "Render",
+        "Arduino IDE",
       ],
     },
     {
       id: "concepts",
       title: "Core Concepts",
-      skills: ["DSA", "OOP", "DBMS", "DevOps and CI/CD fundamentals"],
+      skills: ["Statistics", "Probability", "Data Analysis", "Feature Engineering", "Model Evaluation", "DSA", "OOP", "DBMS", "DevOps and CI/CD fundamentals"],
+    },
+    {
+      id: "iot",
+      title: "IoT & Integrations",
+      skills: ["NodeMCU/ESP8266", "C++", "REST API integration", "HTTP", "API testing (Postman)", "Technical Documentation"],
     },
   ],
   projects: [

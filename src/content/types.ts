@@ -4,7 +4,8 @@ export type SkillGroupId =
   | "frameworks"
   | "databases"
   | "tools"
-  | "concepts";
+  | "concepts"
+  | "iot";
 
 export type ProjectId =
   | "ragAssistant"
