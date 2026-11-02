@@ -219,7 +219,7 @@ function HeroSection({ activePanel, setActivePanel }: NavigationProps) {
                   aria-label="LeetCode"
                   sx={{ p: 1 }}
                 >
-                  <Box component="img" src="https://leetcode.com/favicon.ico" alt="LeetCode" sx={{ width: 24, height: 24, borderRadius: "4px" }} />
+                  <Box component="img" src={`${import.meta.env.BASE_URL}leetcode.ico`} alt="LeetCode" sx={{ width: 24, height: 24, borderRadius: "4px" }} />
                 </IconButton>
               </Stack>
             </Stack>
@@ -371,7 +371,7 @@ function HeroSection({ activePanel, setActivePanel }: NavigationProps) {
                 aria-label="LeetCode"
                 sx={{ p: 0.5 }}
               >
-                <Box component="img" src="https://leetcode.com/favicon.ico" alt="LeetCode" sx={{ width: 36, height: 36, borderRadius: "4px" }} />
+                <Box component="img" src={`${import.meta.env.BASE_URL}leetcode.ico`} alt="LeetCode" sx={{ width: 36, height: 36, borderRadius: "4px" }} />
               </IconButton>
             </Stack>
           </ParticleFlowGroup>

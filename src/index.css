@@ -4,6 +4,16 @@ body,
   min-height: 100%;
 }
 
+:root {
+  --panel-viewport-height: 100vh;
+}
+
+@supports (height: 100dvh) {
+  :root {
+    --panel-viewport-height: 100dvh;
+  }
+}
+
 body {
   margin: 0;
   background-color: #ffffff;
@@ -12,4 +22,11 @@ body {
   background-repeat: repeat;
   background-attachment: fixed;
   overflow-y: auto;
+}
+
+/* Fixed backgrounds trigger full-screen repaints while scrolling on touch devices. */
+@media (hover: none) and (pointer: coarse) {
+  body {
+    background-attachment: scroll;
+  }
 }

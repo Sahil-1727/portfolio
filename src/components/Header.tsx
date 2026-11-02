@@ -22,23 +22,22 @@ function Header({ activePanel, setActivePanel }: NavigationProps) {
           disableGutters
           sx={{ display: { xs: "flex", md: "none" }, justifyContent: "stretch", minHeight: { xs: "48px !important", sm: "56px !important" } }}
         >
-          <Box sx={{ display: "flex", width: "100%", gap: { xs: "3px", sm: "6px" } }}>
+          <Box sx={{ display: "flex", width: "100%", gap: { xs: "3px", sm: "6px" }, overflowX: "auto", scrollbarWidth: "none", "&::-webkit-scrollbar": { display: "none" } }}>
             {uiText.navigation.map((item) => (
               <Button
                 key={item.value}
                 onClick={() => setActivePanel(item.value)}
                 sx={{
-                  flex: 1,
-                  minWidth: 0,
+                  flex: { xs: "0 0 auto", sm: 1 },
+                  minWidth: { xs: 60, sm: 0 },
                   height: { xs: "36px", sm: "42px" },
-                  px: 0,
+                  px: { xs: 0.5, sm: 0 },
                   borderRadius: 2,
                   textTransform: "none",
                   fontSize: { xs: "10px", sm: "13px" },
                   fontWeight: 600,
                   letterSpacing: 0,
                   whiteSpace: "nowrap",
-                  overflow: "hidden",
                   color: activePanel === item.value ? "white" : "text.secondary",
                   backgroundColor: activePanel === item.value ? "primary.main" : "transparent",
                   transition: "all 200ms ease",

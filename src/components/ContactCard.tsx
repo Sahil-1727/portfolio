@@ -48,7 +48,7 @@ function ContactCard() {
         p: { xs: 2, sm: 3, md: 4 },
         borderRadius: 4,
         height: { md: "75vh" },
-        maxHeight: { xs: "calc(100vh - 120px)", sm: "calc(100vh - 140px)", md: "none" },
+        maxHeight: { xs: "calc(var(--panel-viewport-height) - 120px)", sm: "calc(var(--panel-viewport-height) - 140px)", md: "none" },
         overflow: "auto",
         border: "1px solid",
         borderColor: "divider",

@@ -9,7 +9,7 @@ const profile: PortfolioProfile = {
     headline:
       "",
     summary:
-      "Data Science and GenAI-focused MCA student with hands-on experience building Python applications and a local RAG teaching assistant using Whisper, Ollama, BGE-M3, and semantic retrieval. Skilled in Python, SQL, pandas, scikit-learn and Flask; seeking a Data Science, Machine Learning, or GenAI internship.",
+      "Data Science and Generative AI-focused MCA student with a strong foundation in Python, SQL, Machine Learning, and AI application development. Experienced in building end-to-end applications, LLM-powered systems, and data-driven solutions, including a local RAG-based educational assistant, an AI Interviewer, and a customer intelligence analytics engine. My work spans data analysis, feature engineering, semantic retrieval, LLM integration, and backend development using Pandas, NumPy, Scikit-learn, Flask, and PostgreSQL. Passionate about transforming data and emerging AI technologies into practical, intelligent solutions. Seeking internship opportunities in Data Science, Machine Learning, and Generative AI.",
   },
   resumeFile: "Sahil_Teltumde_resume.pdf",
   socialLinks: {

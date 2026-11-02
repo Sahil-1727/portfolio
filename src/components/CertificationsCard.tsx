@@ -14,7 +14,7 @@ function CertificationsCard() {
         border: "1px solid",
         borderColor: "divider",
         backgroundColor: "#fafafa",
-        maxHeight: { xs: "calc(100vh - 120px)", sm: "calc(100vh - 140px)", md: "75vh" },
+        maxHeight: { xs: "calc(var(--panel-viewport-height) - 120px)", sm: "calc(var(--panel-viewport-height) - 140px)", md: "75vh" },
         overflowY: "auto",
       }}
     >

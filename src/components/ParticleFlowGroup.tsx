@@ -1,4 +1,4 @@
-import { useLayoutEffect, useRef } from "react";
+import { useEffect, useLayoutEffect, useRef } from "react";
 import { Box, useMediaQuery } from "@mui/material";
 import type { BoxProps } from "@mui/material";
 
@@ -217,12 +217,43 @@ function ParticleFlowGroup({
   ...boxProps
 }: ParticleFlowGroupProps) {
   const reduceMotion = useMediaQuery("(prefers-reduced-motion: reduce)");
+  const isDesktop = useMediaQuery("(min-width:900px)");
   const rootRef = useRef<HTMLDivElement | null>(null);
   const snapshotRef = useRef<ElementSnapshot | null>(null);
   const previousKeyRef = useRef(transitionKey);
 
+  // Capture the initial hero after the browser has painted it. The screenshot
+  // library is expensive and the desktop hero is hidden on smaller screens.
+  useEffect(() => {
+    if (!isDesktop || reduceMotion || snapshotRef.current) return;
+    const root = rootRef.current;
+    if (!root) return;
+
+    let active = true;
+    const capture = () => {
+      if (!active || !root.isConnected || root.getBoundingClientRect().width === 0) return;
+      captureElementSnapshot(root, maxParticles)
+        .then((snapshot) => {
+          if (active) snapshotRef.current = snapshot;
+        })
+        .catch(() => { /* The layout remains usable if canvas capture fails. */ });
+    };
+    const idleWindow = window as Window & {
+      requestIdleCallback?: (callback: () => void, options?: { timeout: number }) => number;
+      cancelIdleCallback?: (handle: number) => void;
+    };
+    const idleHandle = idleWindow.requestIdleCallback?.(capture, { timeout: 1500 });
+    const timer = idleHandle === undefined ? window.setTimeout(capture, 250) : undefined;
+
+    return () => {
+      active = false;
+      if (idleHandle !== undefined) idleWindow.cancelIdleCallback?.(idleHandle);
+      if (timer !== undefined) window.clearTimeout(timer);
+    };
+  }, [isDesktop, maxParticles, reduceMotion]);
+
   useLayoutEffect(() => {
-    if (!rootRef.current) return undefined;
+    if (!rootRef.current || !isDesktop) return undefined;
     const root = rootRef.current;
 
     let active = true;
@@ -235,12 +266,6 @@ function ParticleFlowGroup({
       !snapshotRef.current?.particles.length
     ) {
       previousKeyRef.current = transitionKey;
-
-      captureElementSnapshot(root, maxParticles).then((snapshot) => {
-        if (active) {
-          snapshotRef.current = snapshot;
-        }
-      });
 
       return () => {
         active = false;
@@ -287,6 +312,9 @@ function ParticleFlowGroup({
         if (!active) return;
         targetSnapshot = snapshot;
         snapshotRef.current = snapshot;
+      }).catch(() => {
+        // Continue the same animation using normalized particle positions.
+        if (active) targetSnapshot = previousSnapshot;
       });
     }
 
@@ -456,10 +484,6 @@ function ParticleFlowGroup({
           }
         });
 
-        captureElementSnapshot(root, maxParticles).then((snapshot) => {
-          if (!active) return;
-          snapshotRef.current = snapshot;
-        });
       }
     }
 
@@ -480,7 +504,7 @@ function ParticleFlowGroup({
       sourceOverlay?.remove();
       flowCanvas?.remove();
     };
-  }, [direction, maxParticles, reduceMotion, transitionKey]);
+  }, [direction, isDesktop, maxParticles, reduceMotion, transitionKey]);
 
   return (
     <Box ref={rootRef} {...boxProps} sx={sx}>
