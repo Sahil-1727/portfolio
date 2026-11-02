@@ -17,6 +17,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import RouterIcon from "@mui/icons-material/Router";
 import BarChartIcon from "@mui/icons-material/BarChart";
 import InsightsIcon from "@mui/icons-material/Insights";
+import RecordVoiceOverIcon from "@mui/icons-material/RecordVoiceOver";
 import LiquidGlassCard from "./LiquidGlassCard";
 import profile from "../content/profile";
 import uiText from "../content/uiText";
@@ -24,6 +25,7 @@ import type { ProjectId } from "../content/types";
 
 const projectIcons = {
   bizIntelEngine: <InsightsIcon />,
+  aiInterviewer: <RecordVoiceOverIcon />,
   housePricePredictor: <BarChartIcon />,
   ragAssistant: <PsychologyIcon />,
   devtrack: <StorageIcon />,

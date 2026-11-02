@@ -13,7 +13,8 @@ export type ProjectId =
   | "queueSystem"
   | "housePricePredictor"
   | "bizIntelEngine"
-  | "smartHome";
+  | "smartHome"
+  | "aiInterviewer";
 
 export type SocialLinkId = "linkedin" | "github" | "takeuforward" | "leetcode";
 
