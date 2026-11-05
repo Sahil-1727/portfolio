@@ -192,6 +192,7 @@ const profile: PortfolioProfile = {
         "A Flask application for interview practice using a job description and PDF resume. Google Gemini generates personalized technical, project, problem-solving, and behavioral questions, evaluates answers with scores from 0–10, and produces a final scorecard with strengths, areas to improve, and a recommendation. Supports typed answers or microphone recordings transcribed locally with faster-whisper, on-demand question audio via edge-tts, and an optional camera preview. Session state is stored server-side with Flask-Session to handle growing interview history without hitting cookie size limits.",
       tech: ["Python", "Flask", "Google Gemini API", "faster-whisper", "edge-tts", "pypdf", "Flask-Session"],
       link: "https://github.com/Sahil-1727/AI-Interviewer",
+      liveLink: "https://ai-interviewer-795b.onrender.com/",
     },
     {
       id: "ragAssistant",
